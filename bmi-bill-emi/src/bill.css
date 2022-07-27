@@ -1,0 +1,33 @@
+#bill{
+    width:50%;
+    border:1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin:5%;
+    padding:5%;
+    text-align:left
+}
+#bill:hover{
+    transform: scale(1.05);
+}
+#bill>.note{
+    color:rgb(230, 61, 0)
+}
+#bill>input{
+    border:none;
+    outline:none;
+    width:50%
+}
+#error1{
+    color:red
+}
+#billOutput{
+    color: darkgreen
+}
+#unit{
+    width:100%
+}

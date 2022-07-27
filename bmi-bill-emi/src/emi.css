@@ -1,0 +1,84 @@
+#emi{
+    width:50%;
+    border:1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e3a1ca, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e3a1ca, #dc128b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin:5%;
+    padding:5%;
+    text-align:left
+}
+#emi:hover{
+    transform: scale(1.05);
+}
+.note2{
+    color:purple
+}
+#emi>div{
+    display:flex;
+    justify-content: space-between;
+}
+#emi>div input{
+    width:50%;
+    background:none;
+    border:none;
+    border-bottom:2px solid black;
+    border-radius: 5px;
+    outline:none;
+}
+
+#emi>div span{
+    width:51%;
+    display: flex;
+    justify-content: space-between;
+}
+#emi>div span>input{
+    width:45%;
+}
+
+input::placeholder{
+    color:rgb(116, 31, 116)
+}
+#error2{
+    color:red
+}
+.calc1,.reset,.details{
+    margin-top: 5%;
+    background-color: rgb(2, 146, 98);
+    border:1px solid rgb(237, 153, 153);
+    color:white;
+    border-radius: 5px;
+    padding:1%;
+    width:20%
+}
+.reset{
+    background-color: red;
+}
+.details{
+    background-color: green;
+}
+#emiResult{
+    color:black;
+    font-weight: 600;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 0;
+}
+#detailList{
+    display: block;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+tr>*{
+    border:2px solid purple;
+    padding:2%
+}
+th{
+    width:50%;
+}

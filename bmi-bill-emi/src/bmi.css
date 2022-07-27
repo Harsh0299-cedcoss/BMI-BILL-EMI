@@ -1,0 +1,53 @@
+body{
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f6f3cf, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#bmi{
+    width:50%;
+    border:1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin:5%;
+    padding:5%;
+    text-align:left
+}
+#bmi:hover{
+    transform: scale(1.05);
+}
+.note{
+    color:rgb(9, 154, 9)
+}
+#bmi>input{
+    width:70%;
+    border:none;
+    outline:none;
+}
+#bmi>select{
+    size:20;
+    border:none;
+    outline:none
+}
+#error{
+    color:red
+}
+.calc{
+    border:1px solid rgb(237, 153, 153);
+    color:white;
+    border-radius: 5px;
+    background-color: rgb(234, 58, 58);
+    padding:1% 2%;
+}
+.uW,.ob{
+    color:red;
+}
+.oW{
+    color:#3f2b96
+}
+.hW{
+    color:green
+}
