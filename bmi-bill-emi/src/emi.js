@@ -1,32 +1,43 @@
 import React, { useState } from 'react';
 import "./emi.css"
 const Emi = () => {
+    // details states initialised with 0
     const [emi,setEmi]=useState(0);
     const [tinterest,setInt]=useState(0);
     const [amt,setAmt]=useState(0);
+
+    // calculate EMI
     const calcEmi = ()=>{
+        // getting input values
         let loan = Number(document.getElementById("loan").value);
         let si = Number(document.getElementById("si").value);
         let yrs = Number(document.getElementById("timeYrs").value);
         let mnt = Number(document.getElementById("timeMnt").value);
+        
+        // clearing error message emi ans and details division
         let err = document.getElementById("error2");
         err.innerHTML = "";
         document.getElementById("emiAns").innerHTML = "";
         document.getElementById("detailList").innerHTML = "";
+        
+        // calculating output
         let n = yrs*12+mnt;
         let r = si/12/100;
-        let e = loan*r*((1+r)**n)/((1+r)**n-1);
+        let e = loan*r*((1+r)**n)/((1+r)**n-1);//ei will be infinity if inputs are zero
         if(isFinite(e)){
             document.getElementById("emiAns").innerHTML = `<label for="emiResult">EMI:</label><input value=${"\u20B9"+e.toLocaleString()} id="emiResult" disabled/>`
             setEmi(e.toLocaleString());
             setInt((e*n-loan).toLocaleString());
             setAmt((e*n).toLocaleString());
         }
-        else{
+        else{// if emi becomes infinity
             err.innerHTML="Getting EMI as Infinity"
         }
     }
+
+    // reset entire calculator
     const reset = ()=>{
+        // clear input fields, error message, emi answer and details division
         document.getElementById("loan").value="";
         document.getElementById("si").value="";
         document.getElementById("timeYrs").value="";
@@ -34,10 +45,14 @@ const Emi = () => {
         document.getElementById("error2").innerHTML = "";
         document.getElementById("emiAns").innerHTML = "";
         document.getElementById("detailList").innerHTML = "";
+        
+        // reset the states
         setEmi(0);
         setInt(0);
         setAmt(0);
     }
+
+    // displaying the details
     const details = ()=>{
         if(emi!==0)
         document.getElementById("detailList").innerHTML=`
@@ -56,7 +71,7 @@ const Emi = () => {
             <td>\u20B9${amt}</td>
         </tr>
         </table>`;
-        else
+        else//if emi is 0 or infinity
         document.getElementById("error2").innerHTML="Calculate First"
     }
     return (

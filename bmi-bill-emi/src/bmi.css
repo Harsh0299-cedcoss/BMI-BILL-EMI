@@ -1,8 +1,10 @@
 body{
-    background: #005AA7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f6f3cf, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("./tumblr_02cebc6c2e0737af3cb7aa5324291592_3a57962a_400.webp");
+    background-attachment: fixed;
+    background-size: cover;
 }
+
+/* bmi divison */
 #bmi{
     width:50%;
     border:1px solid black;
@@ -16,25 +18,36 @@ body{
     padding:5%;
     text-align:left
 }
+/* bmi divison on hover */
 #bmi:hover{
     transform: scale(1.05);
 }
+/* initial note */
 .note{
     color:rgb(9, 154, 9)
 }
+/* inputs in bmi */
 #bmi>input{
     width:70%;
     border:none;
     outline:none;
+    margin-top: 10px;
+    height:1.5rem
 }
+/* selects in bmi */
 #bmi>select{
-    size:20;
+    width: 20%;
     border:none;
-    outline:none
+    outline:none;
+    height: 1.63rem;
 }
+
+/* Error Message */
 #error{
     color:red
 }
+
+/* Calculation button */
 .calc{
     border:1px solid rgb(237, 153, 153);
     color:white;
@@ -42,6 +55,8 @@ body{
     background-color: rgb(234, 58, 58);
     padding:1% 2%;
 }
+
+/* Weight Status */
 .uW,.ob{
     color:red;
 }

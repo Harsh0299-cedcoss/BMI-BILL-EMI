@@ -1,3 +1,4 @@
+/* bill division */
 #bill{
     width:50%;
     border:1px solid black;
@@ -11,23 +12,30 @@
     padding:5%;
     text-align:left
 }
+/* bill division on hover */
 #bill:hover{
     transform: scale(1.05);
 }
+/* Note of bill division */
 #bill>.note{
     color:rgb(230, 61, 0)
 }
-#bill>input{
+/* label and input dvision */
+#bill>div{
+    display: flex;
+    justify-content: space-between;
+}
+/* input in bill */
+#unit{
     border:none;
     outline:none;
-    width:50%
+    width:80%
 }
+/* styling error message */
 #error1{
     color:red
 }
+/* styling output field */
 #billOutput{
     color: darkgreen
-}
-#unit{
-    width:100%
 }

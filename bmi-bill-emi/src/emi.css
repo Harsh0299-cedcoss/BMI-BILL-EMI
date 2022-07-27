@@ -1,3 +1,4 @@
+/* emi division */
 #emi{
     width:50%;
     border:1px solid black;
@@ -11,16 +12,20 @@
     padding:5%;
     text-align:left
 }
+/* emid division on hover */
 #emi:hover{
     transform: scale(1.05);
 }
+/* note in emi division */
 .note2{
     color:purple
 }
+/* label and input divisions */
 #emi>div{
     display:flex;
     justify-content: space-between;
 }
+/* inputs in emi */
 #emi>div input{
     width:50%;
     background:none;
@@ -29,22 +34,25 @@
     border-radius: 5px;
     outline:none;
 }
-
+/* spans in emi */
 #emi>div span{
     width:51%;
     display: flex;
     justify-content: space-between;
 }
+/* inputs in span in emi */
 #emi>div span>input{
     width:45%;
 }
-
+/* styling placeholder in inputs */
 input::placeholder{
     color:rgb(116, 31, 116)
 }
+/* styling error message */
 #error2{
     color:red
 }
+/* styling buttons */
 .calc1,.reset,.details{
     margin-top: 5%;
     background-color: rgb(2, 146, 98);
@@ -60,17 +68,21 @@ input::placeholder{
 .details{
     background-color: green;
 }
+/* styling result */
 #emiResult{
     color:black;
     font-weight: 600;
 }
+/* hiding the increment and decrement operator */
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {  
    opacity: 0;
 }
+/* details division */
 #detailList{
     display: block;
 }
+/* details table */
 table{
     width:100%;
     border-collapse: collapse;
@@ -81,4 +93,14 @@ tr>*{
 }
 th{
     width:50%;
+}
+tr:nth-child(odd){
+    background-color: #e3a1ca;
+}
+tr:nth-child(even){
+    background-color: #fc7cc9;
+}
+tr:hover{
+    background-color: #dc128b;
+    color:white
 }
