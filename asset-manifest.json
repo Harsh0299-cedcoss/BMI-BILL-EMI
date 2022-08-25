@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BMI-BILL-EMI/static/css/main.f005853d.css",
+    "main.js": "/BMI-BILL-EMI/static/js/main.be228a5d.js",
+    "static/media/tumblr__3a57962a_400.webp": "/BMI-BILL-EMI/static/media/tumblr_02cebc6c2e0737af3cb7aa5324291592_3a57962a_400.0992caf5e77acedb4f90.webp",
+    "index.html": "/BMI-BILL-EMI/index.html",
+    "main.f005853d.css.map": "/BMI-BILL-EMI/static/css/main.f005853d.css.map",
+    "main.be228a5d.js.map": "/BMI-BILL-EMI/static/js/main.be228a5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f005853d.css",
+    "static/js/main.be228a5d.js"
+  ]
+}
